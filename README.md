@@ -2,7 +2,7 @@
 
 # Standards
 
-The `standards` package provides a set of interfaces and implementations for caching and logging functionalities, designed to be flexible and extensible. It includes interfaces for cache operations, a logger interface, and implementations for both cache and logging functionalities.
+The `standards` package provides a set of interfaces and implementations for [caching](#caching) and [logging](#logging) functionalities, designed to be flexible and extensible. It includes interfaces for cache operations, a logger interface, and implementations for both cache and logging functionalities.
 
 [![Static Badge](https://img.shields.io/badge/Github-gouef%2Fstandards-blue?style=for-the-badge&logo=github&link=github.com%2Fgouef%2Fstandards)](https://github.com/gouef/standards)
 
