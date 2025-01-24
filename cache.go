@@ -2,7 +2,7 @@ package standards
 
 type Cache interface {
 	// GetItem Returns a CacheItem representing the specified key.
-	GetItem(key string) *CacheItem
+	GetItem(key string) CacheItem
 	// GetItems Returns a list of cache items.
 	GetItems(keys ...string) []CacheItem
 	// HasItem Confirms if the cache contains specified cache item.
