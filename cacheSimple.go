@@ -18,5 +18,5 @@ type CacheSimple interface {
 	// Set Persists a cache item.
 	Set(key string, item any) error
 	// SetMultiply Persists a cache items.
-	SetMultiply(values []any, ttl time.Duration) error
+	SetMultiply(values map[string]any, ttl time.Duration) error
 }
