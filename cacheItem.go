@@ -12,7 +12,7 @@ type CacheItem interface {
 	// Set Sets the value represented by this cache item
 	Set(value any) (CacheItem, error)
 	// ExpiresAt Sets the absolute expiration time for this cache item.
-	ExpiresAt(expiration time.Time) (CacheItem, error)
+	ExpiresAt(expiration *time.Time) (CacheItem, error)
 	// ExpiresAfter Sets the relative expiration time for this cache item.
 	ExpiresAfter(t time.Duration)
 }
