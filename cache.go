@@ -1,5 +1,7 @@
 package standards
 
+const KeepTTL = -1
+
 type Cache interface {
 	// GetItem Returns a CacheItem representing the specified key.
 	GetItem(key string) CacheItem

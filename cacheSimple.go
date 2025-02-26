@@ -16,7 +16,7 @@ type CacheSimple interface {
 	// DeleteMultiply Removes multiple items in a single operation.
 	DeleteMultiply(keys ...string) error
 	// Set Persists a cache item.
-	Set(key string, item any, ttl *time.Duration) error
+	Set(key string, item any, ttl time.Duration) error
 	// SetMultiply Persists a cache items.
-	SetMultiply(values map[string]any, ttl *time.Duration) error
+	SetMultiply(values map[string]any, ttl time.Duration) error
 }
