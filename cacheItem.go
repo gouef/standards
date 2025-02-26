@@ -10,7 +10,7 @@ type CacheItem interface {
 	// IsHit Confirms if the cache item lookup resulted in a cache hit.
 	IsHit() bool
 	// Set Sets the value represented by this cache item
-	Set(value any) (CacheItem, error)
+	Set(value any, ttl *time.Duration) (CacheItem, error)
 	// ExpiresAt Sets the absolute expiration time for this cache item.
 	ExpiresAt(expiration *time.Time) (CacheItem, error)
 	// ExpiresAfter Sets the relative expiration time for this cache item.
